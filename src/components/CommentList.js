@@ -8,7 +8,7 @@ class CommentList extends Component {
       <div>
         <ul className="comments">
           {comments.map( comment =>
-            <li>
+            <li key={ comment.id }>
               { comment.comment }
               <div className="comment-name">
                 <img
